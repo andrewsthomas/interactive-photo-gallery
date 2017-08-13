@@ -1,0 +1,34 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+.searchbar {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: .5em;
+  border-radius: 2px;
+}
+
+.gallery {
+  margin-bottom: 100px;
+}
+
+.thumbnails {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+.thumbnails li {
+  list-style: none;
+}
+
+.thumbnails li img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
