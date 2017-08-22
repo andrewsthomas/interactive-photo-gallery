@@ -11,7 +11,7 @@
   <body>
     <div id="wrapper">
       <div id="search">
-        <input class="searchbar" type="text" name="search" placeholder="Search(16pt)">
+        <input class="searchbar" type="text" name="search" placeholder="Search">
       </div>
       <div id="gallery" class="cf">
         <ul class="thumbnails">
@@ -33,7 +33,6 @@
     <script src="js/lightbox/js/lightbox-plus-jquery.js"></script>
     <script>
 
-
       $(document).ready(function() {
         $('.searchbar').keyup(function() {
           var $searchValue = $(this).val().toLowerCase();
@@ -49,11 +48,11 @@
         });
       });
 
-
       lightbox.option({
         'imageFadeDuration': 700,
         'showImageNumberLabel': false
       })
+
     </script>
   </body>
 </html>
