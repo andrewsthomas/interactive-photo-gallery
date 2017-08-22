@@ -1,0 +1,86 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+.searchbar {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: .5em;
+  border-radius: 2px;
+}
+
+#gallery {
+  margin: 0 auto 100px;
+}
+
+.thumbnails {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.thumbnails li {
+  list-style: none;
+  display: block;
+}
+
+.thumbnails li img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 3em auto 0;
+}
+
+/* LIGHTBOX STYLES */
+
+.lb-data .lb-caption {
+    font-size: 16px;
+}
+
+/* MEDIA QUERIES FOR TABLET */
+
+@media (min-width: 768px) {
+  #gallery {
+    max-width: 90%;
+    margin-bottom: 100px;
+  }
+  .thumbnails li {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .cf::before,
+  .cf::after {
+    content: " ";
+    display: table;
+  }
+  .cf::after {
+    clear: both;
+  }
+  .cf {
+    *zoom: 1;
+  }
+}
+
+
+/* MEDIA QUERIES FOR DESKTOP */
+
+@media (min-width: 1024px) {
+  #gallery {
+    max-width: 100%;
+  }
+  .thumbnails li {
+    width: 22%;
+    float: none;
+    vertical-align: top;
+  }
+}

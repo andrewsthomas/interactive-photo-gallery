@@ -39,7 +39,7 @@
           var $searchValue = $(this).val().toLowerCase();
           $('.thumbnails li').each(function() {
             var $caption = $(this).children().attr('data-title');
-            var $captionText = $('$caption').text().toLowerCase();
+            var $captionText = $caption.toLowerCase();
             if ($captionText.indexOf($searchValue) > -1) {
               $(this).show();
             } else {

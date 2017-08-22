@@ -8,33 +8,26 @@
   display: block;
   width: 80%;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: .5em;
   border-radius: 2px;
 }
 
-#gallery {
-  margin: 0 auto 100px;
-}
-
 .thumbnails {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0;
-  margin: 0 auto;
-  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
 }
 
 .thumbnails li {
-  list-style: none;
-  display: block;
-}
-
-.thumbnails li img {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin: 3em auto 0;
+  margin: 1.5em;
 }
 
 /* LIGHTBOX STYLES */
@@ -43,44 +36,13 @@
     font-size: 16px;
 }
 
-/* MEDIA QUERIES FOR TABLET */
+/* MEDIA QUERIES FOR LARGER SCREENS */
 
 @media (min-width: 768px) {
-  #gallery {
-    max-width: 90%;
-    margin-bottom: 100px;
-  }
-  #gallery li {
-    display: inline-block;
-    float: left;
-    width: 33%;
-    margin: 0;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .cf::before,
-  .cf::after {
-    content: " ";
-    display: table;
-  }
-  .cf::after {
-    clear: both;
-  }
-  .cf {
-    *zoom: 1;
-  }
-}
-
-
-/* MEDIA QUERIES FOR DESKTOP */
-
-@media (min-width: 1024px) {
-  #gallery {
-    max-width: 100%;
-  }
-  #gallery li {
-    width: 22%;
-    float: none;
-    vertical-align: top;
+  .thumbnails {
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto 5em;
   }
 }
